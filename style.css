@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background: #384B70;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.profile-section {
+    background: #507687;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.profile-section p{
+    font-weight: bold;
+    color: #B8001F;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    background: #ddd;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    line-height: 2rem;
+}
+
+.story h2{
+    color: #507687;
+}
+
+.personal-info h2{
+    color: #507687;
+}
+.tools-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.tools-section h2 {
+    margin-bottom: 1rem;
+    color: #507687;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.tool-item {
+    cursor: pointer;
+    position: relative;
+}
+
+.tool-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.tool-info {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #507687;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 150px;
+    z-index: 1;
+}
+
+.tool-item:hover .tool-info {
+    display: block;
+}
+
+.tool-item:hover .tool-img {
+    transform: scale(1.05);
+}
